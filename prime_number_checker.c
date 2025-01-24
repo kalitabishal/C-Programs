@@ -3,7 +3,7 @@
 int main() {
     int num, isPrime = 1; // Assume the number is prime initially
 
-    // Input from the user
+    // Input
     printf("Enter a positive integer: ");
     scanf("%d", &num);
 
@@ -15,11 +15,11 @@ int main() {
         for (int i = 2; i * i <= num; i++) {
             if (num % i == 0) {
                 isPrime = 0; // Set flag to 0 if divisible
-                break; // No need to check further
+                break;
             }
         }
 
-        // Output result
+        // Output
         if (isPrime) {
             printf("%d is a prime number.\n", num);
         } else {
